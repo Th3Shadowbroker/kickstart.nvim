@@ -154,7 +154,7 @@ require('lazy').setup({
       end,
     },
   },
-
+--[[
   {
     -- Theme inspired by Atom
     'navarasu/onedark.nvim',
@@ -163,8 +163,8 @@ require('lazy').setup({
       vim.cmd.colorscheme 'onedark'
     end,
   },
-
-  {
+--]]
+--[[{
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
@@ -177,7 +177,7 @@ require('lazy').setup({
       },
     },
   },
-
+--]]
   {
     -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',
