@@ -98,7 +98,7 @@ require('lazy').setup({
     },
   },--]]
 
-  {
+  --[[{
     -- Autocompletion
     'hrsh7th/nvim-cmp',
     dependencies = {
@@ -112,11 +112,13 @@ require('lazy').setup({
       -- Adds a number of user-friendly snippets
       'rafamadriz/friendly-snippets',
     },
-  },
+  },--]]
 
+  --[[
   -- Useful plugin to show you pending keybinds.
   { 'folke/which-key.nvim', opts = {} },
-  {
+  --]]
+  --[[{
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
@@ -153,7 +155,7 @@ require('lazy').setup({
         end, { expr = true, buffer = bufnr, desc = 'Jump to previous hunk' })
       end,
     },
-  },
+  },--]]
 --[[
   {
     -- Theme inspired by Atom
@@ -178,18 +180,22 @@ require('lazy').setup({
     },
   },
 --]]
-  {
+
+  --[[{
     -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help ibl`
     main = 'ibl',
     opts = {},
-  },
+  },--]]
 
+  --[[
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
+  --]]
 
+  --[[
   -- Fuzzy Finder (files, lsp, etc)
   {
     'nvim-telescope/telescope.nvim',
@@ -209,16 +215,16 @@ require('lazy').setup({
         end,
       },
     },
-  },
+  },--]]
 
-  {
+  --[[{
     -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
       'nvim-treesitter/nvim-treesitter-textobjects',
     },
     build = ':TSUpdate',
-  },
+  },--]]
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
@@ -515,7 +521,7 @@ require('mason-lspconfig').setup()
 --  define the property 'filetypes' to the map in question.
 local servers = {
   -- clangd = {},
-  -- gopls = {},
+  gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
   -- tsserver = {},
